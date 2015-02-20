@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		EB153A5A1A9766DA000ECABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB153A591A9766DA000ECABB /* main.m */; };
 		EB153A5D1A9766DA000ECABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB153A5C1A9766DA000ECABB /* AppDelegate.m */; };
-		EB153A601A9766DA000ECABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB153A5F1A9766DA000ECABB /* ViewController.m */; };
 		EB153A631A9766DA000ECABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB153A611A9766DA000ECABB /* Main.storyboard */; };
 		EB153A651A9766DA000ECABB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB153A641A9766DA000ECABB /* Images.xcassets */; };
 		EB153A681A9766DA000ECABB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB153A661A9766DA000ECABB /* LaunchScreen.xib */; };
 		EB153A741A9766DA000ECABB /* challenge3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB153A731A9766DA000ECABB /* challenge3Tests.m */; };
+		EB153A7F1A977A65000ECABB /* Challenge3TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB153A7E1A977A65000ECABB /* Challenge3TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		EB153A591A9766DA000ECABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB153A5B1A9766DA000ECABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB153A5C1A9766DA000ECABB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB153A5E1A9766DA000ECABB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB153A5F1A9766DA000ECABB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB153A621A9766DA000ECABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB153A641A9766DA000ECABB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB153A671A9766DA000ECABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EB153A6D1A9766DA000ECABB /* challenge3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = challenge3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB153A721A9766DA000ECABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB153A731A9766DA000ECABB /* challenge3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = challenge3Tests.m; sourceTree = "<group>"; };
+		EB153A7D1A977A65000ECABB /* Challenge3TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Challenge3TableViewController.h; sourceTree = "<group>"; };
+		EB153A7E1A977A65000ECABB /* Challenge3TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Challenge3TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +83,9 @@
 			children = (
 				EB153A5B1A9766DA000ECABB /* AppDelegate.h */,
 				EB153A5C1A9766DA000ECABB /* AppDelegate.m */,
-				EB153A5E1A9766DA000ECABB /* ViewController.h */,
-				EB153A5F1A9766DA000ECABB /* ViewController.m */,
 				EB153A611A9766DA000ECABB /* Main.storyboard */,
+				EB153A7D1A977A65000ECABB /* Challenge3TableViewController.h */,
+				EB153A7E1A977A65000ECABB /* Challenge3TableViewController.m */,
 				EB153A641A9766DA000ECABB /* Images.xcassets */,
 				EB153A661A9766DA000ECABB /* LaunchScreen.xib */,
 				EB153A571A9766DA000ECABB /* Supporting Files */,
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB153A601A9766DA000ECABB /* ViewController.m in Sources */,
 				EB153A5D1A9766DA000ECABB /* AppDelegate.m in Sources */,
 				EB153A5A1A9766DA000ECABB /* main.m in Sources */,
+				EB153A7F1A977A65000ECABB /* Challenge3TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +414,7 @@
 				EB153A791A9766DA000ECABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB153A7A1A9766DA000ECABB /* Build configuration list for PBXNativeTarget "challenge3Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				EB153A7C1A9766DA000ECABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
