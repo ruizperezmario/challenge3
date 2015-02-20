@@ -55,12 +55,15 @@
     
     // Configure the cell...
     if (indexPath.section == 0){
+        cell.backgroundColor = [UIColor redColor];
         cell.textLabel.text = @"I am in section 0";
     }else
         if (indexPath.section == 1){
+            cell.backgroundColor = [UIColor blueColor];
             cell.textLabel.text = @"another section";
         }else
             if (indexPath.section == 2){
+                cell.backgroundColor = [UIColor yellowColor];
                 NSString *cellValue = [[NSString alloc] initWithFormat:@"Cell num: %li", (long)indexPath.row];
                 cell.textLabel.text = cellValue;
             }
