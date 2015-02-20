@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9A54B3B6-0FA6-42BA-ACCA-F8BF58A66091</string>
+	<key>IDESourceControlProjectName</key>
+	<string>challenge3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BBE2255D345331935FE89DE73C3DE3B10E891B7E</key>
+		<string>https://github.com/ruizperezmario/challenge3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>challenge3/challenge3.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BBE2255D345331935FE89DE73C3DE3B10E891B7E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ruizperezmario/challenge3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BBE2255D345331935FE89DE73C3DE3B10E891B7E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BBE2255D345331935FE89DE73C3DE3B10E891B7E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>challenge3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
