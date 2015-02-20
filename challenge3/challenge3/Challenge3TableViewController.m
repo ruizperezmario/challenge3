@@ -7,6 +7,8 @@
 //
 
 #import "Challenge3TableViewController.h"
+#import "AstronomicalData.h"
+#import "SpaceObject.h"
 
 @interface Challenge3TableViewController ()
 
@@ -22,7 +24,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    /*
     NSString *planet1= @"Mercury";
     NSString *planet2= @"Venus";
     NSString *planet3= @"Earth";
@@ -32,6 +34,19 @@
     NSString *planet7= @"Uranus";
     NSString *planet8= @"Neptune";
     self.planets = [[NSMutableArray alloc] initWithObjects:planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8, nil];
+    */
+    
+    self.planets = [[NSMutableArray alloc] init];
+    
+    for(NSMutableDictionary *planetData in [AstronomicalData allKnownPlanets]){
+        NSString *imageName = [[NSString alloc] initWithFormat:@"%@.jpg", planetData[PLANET_NAME]];
+        
+        SpaceObject *planet = [[SpaceObject alloc] initWithData:planetData
+                                                       andImage:[UIImage imageNamed: imageName]];
+        [self.planets addObject: planet];
+    }
+    
+   
     
 }
 
@@ -59,8 +74,14 @@
     NSString *identifierCell = @"celdaPrimaria";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierCell forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor grayColor];
-    cell.textLabel.text = [self.planets objectAtIndex:indexPath.row];
+    SpaceObject *planet = [self.planets objectAtIndex:indexPath.row];
+    cell.textLabel.text = planet.name;
+    cell.detailTextLabel.text = planet.nickname;
+    cell.imageView.image = planet.spaceImage;
+    
+    cell.backgroundColor = [UIColor blackColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha: 1.0];
     
     return cell;
 }
