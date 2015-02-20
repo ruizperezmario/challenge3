@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface Challenge3TableViewController : UITableViewController
-
+@property (nonatomic, strong) NSMutableArray *planets;
 @end
